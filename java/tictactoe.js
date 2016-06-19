@@ -8,18 +8,21 @@ function start(){
 }
 
 function showX() {
-var td = document.getElementById('sq1')
+var td = document.getElementById('sq1');
 	for (i = 0; i < boxes.length; i++){
 		boxes[i].addEventListener('click', makeX);
 	}
 }
 
+function makeY() {
+	 'Y';
+}
 function makeX() {
 var td = document.getElementById('sq1');
 	td.innerHTML = 'X';
 }
 
-/*	var td = document.getElementsByTagName('td');
+ /*	var td = document.getElementsByTagName('td');
 		for (i = 0; i < td.length; i++)
 		td[i].innerHTML = makeX;
 } else if ('click' === false) {
@@ -32,5 +35,5 @@ var td = document.getElementById('sq1');
   for (var i = boxes.length - 1; i >= 0; i--) {
     boxes[i].addEventListener("click", addXorO);
   }
-}
+}*/
 
