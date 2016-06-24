@@ -30,37 +30,37 @@
 // }
 // }
 
-var box = document.getElementsByTagName('td');
-var reset = document.querySelector('button');
-var playerX = 'X'; 
-var playerO = 'O'; 
-var turn = 0;
-var counter = 0; 
+ 
 
 function Board() {
+    var box = document.getElementsByTagName('td');
+    var playerX = 'X'; 
+    var playerO = 'O'; 
     this.square = box;
-    this.listen = reset;
-}
+    this.counter = 0;
+    this.turn = 0;
 
+
+}
     Board.prototype = {
             
         XorO: function() {
          
-         if (this.square.textContent.length === 0) {
-
-             if (counter % 2 === 0) {
+         if (this.square.length === 0) {
+             if (this.counter % 2 === 0) {
                  this.square.textContent = playerX;
                  this.square.setAttribute('class', 'X');
-                        turn = 1;
-                        counter ++;
+                        this.turn = 1;
+                        this.counter ++;
               } else {
                  this.square.textContent = playerO;
                  this.square.setAttribute('class', 'O');
-                        turn = 0;
-                        counter ++;
+                        this.turn = 0;
+                        this.counter ++;
                     }        
             }
-        },
+       },
+
             
         listener: function() {   
             var self = this;
@@ -69,17 +69,17 @@ function Board() {
                     self.XorO();
                 });
             }
-        },
+        }};
     
-        clearBoard: function() {
-            for (var i = 0; i <this.listen.length; i++) {
-                this.listen[i].textContent ='';
-                this.listen[i].setAttribute('class', 'clearbackground');
-            }
-            turn = 0;
-            counter = 0;
-        }
-    };
+    //     clearBoard: function() {
+    //         for (var i = 0; i <this.listen.length; i++) {
+    //             this.listen[i].textContent ='';
+    //             this.listen[i].setAttribute('class', 'clearbackground');
+    //         }
+    //         turn = 0;
+    //         counter = 0;
+    //     }
+    // };
 
             
 
