@@ -1,3 +1,9 @@
+function Turn() {
+    this.marker = 'X' 
+}
+
+var myTurn = new Turn();
+
 
 window.onload = start;
 var boxes = document.getElementsByTagName("td");
@@ -19,17 +25,20 @@ function start() {
 
 function makeX(square) {
 	if (square.target.textContent.length === 0) {
-	if (counter % 2 === 0) {
-     square.target.textContent = playerX;
-     square.target.setAttribute('class', 'X');
-            turn = 1;
-            counter ++;
-        } else {
-     square.target.textContent = playerO;
-     square.target.setAttribute('class', 'O');
-            turn = 0;
-            counter ++;
-        }
+     if (myTurn.marker === 'X') {
+        myTurn.marker = 'O';
+        square.target.textContent = playerX;
+        square.target.setAttribute('class', 'X');
+        turn = 1;
+        counter ++;
+    } 
+    else {
+        myTurn.marker = 'X';
+        square.target.textContent = playerO;
+        square.target.setAttribute('class', 'O');
+        turn = 0;
+        counter ++;
+    }
 }
 }
 
