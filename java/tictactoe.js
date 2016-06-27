@@ -6,7 +6,7 @@ var myTurn = new Turn();
 
 Turn.prototype = {
     switch: function(square_target){
-        
+
     }
 };
 
@@ -46,5 +46,6 @@ function clearBoard() {
     box[i].textContent ='';
     }
 	myTurn.marker = 'X';
+
 }
 start();
