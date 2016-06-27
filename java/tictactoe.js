@@ -16,12 +16,12 @@ function start() {
     var box = document.getElementsByTagName('td');
     var reset = document.querySelector('button');    
     for (var i = 0; i <box.length; i++) {
-    if (box[i].addEventListener("click", makeX));
+    if (box[i].addEventListener("click", markXorO));
     reset.addEventListener("click", clearBoard);	
     }
 }
 
-function makeX(square) {
+function markXorO(square) {
 	// if (square.target.textContent.length === 0) {
  //        myTurn.switch(square.target);
  //    }
@@ -36,19 +36,15 @@ function makeX(square) {
         square.target.textContent = myTurn.marker;
         square.target.setAttribute('class', myTurn.marker);
         myTurn.marker = 'X';
-    }
-}
+        }
+    }   
 }
 
 function clearBoard() {
     var box = document.getElementsByTagName('td');
     for (var i = 0; i <box.length; i++) {
     box[i].textContent ='';
-    box[i].setAttribute('class', 'clearbackground');
-}
+    }
 	myTurn.marker = 'X';
-
 }
 start();
-
-
