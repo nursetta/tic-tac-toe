@@ -6,7 +6,7 @@ var myTurn = new Turn();
 
 Turn.prototype = {
     switch: function(square_target){
-
+        
     }
 };
 

@@ -71,25 +71,10 @@ button:hover {
 }
 .X {
   color: #11E57E;
-    -webkit-animation-name: spin;
-    -webkit-animation-duration: 200ms;
-    -webkit-animation-iteration-count: 1;
-    -webkit-animation-timing-function: linear;
 } 
-@-webkit-keyframes spin {
-    from { -webkit-transform: rotate(0deg); }
-    to { -webkit-transform: rotate(360deg); }
-}   
+
 .O {
   color: #08AFE3;
-    -webkit-animation-name: spin;
-    -webkit-animation-duration: 200ms;
-    -webkit-animation-iteration-count: 1;
-    -webkit-animation-timing-function: linear;
-} 
-@-webkit-keyframes spin {
-    from { -webkit-transform: rotate(0deg); }
-    to { -webkit-transform: rotate(360deg); }
 }
 .clearbackground {
 	background: none;
