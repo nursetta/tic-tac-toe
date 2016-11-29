@@ -1,33 +1,53 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>tic tac toe</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<script type="text/javascript" src = "java/tictactoe.js"> </script>
-</head>
-<body>
-	<h1> TIC TAC TOE </h1>
-	
-	<div class = "button">
-		<button class = "reset"> Play Again! </button>
-	</div>
 
-        <table id="board">
-            <tr class="row1">
-                <td id="1"></td>
-                <td id="2"></td>
-                <td id="3"></td>
-            </tr>
-            <tr class="row2">
-                <td id="4"></td>
-                <td id="5"></td>
-                <td id="6"></td>
-            </tr>
-            <tr class="row3">
-                <td id="7"></td>
-                <td id="8"></td>
-                <td id="9"></td>
-            </tr>
-        </table>
+	<link rel="stylesheet" type="text/css" href="css/style.js">
+
+</head>
+
+<body>
+    <!-- Game Title -->
+    <h1> TIC TAC TOE </h1>
+    
+    <!-- Game Reset Button -->
+    <div id="button">
+        <button class="reset" onclick="clearBoard()"> Play Again! </button>
+    </div>
+    
+    <!-- Game Board -->
+    <table id="board">
+        <tr id="row1">
+            <td id="s1"></td>
+            <td id="s2"></td>
+            <td id="s3"></td>
+        </tr>
+        <tr id="row2">
+            <td id="s4"></td>
+            <td id="s5"></td>
+            <td id="s6"></td>
+        </tr>
+        <tr id="row3">
+            <td id="s7"></td>
+            <td id="s8"></td>
+            <td id="s9"></td>
+        </tr>
+    </table>
+
+    <!-- Score Board -->
+    
+    <div id="xWins">X Wins</div>
+        <div id="xWinsCount">0</div>
+    
+    <div id="oWins">O Wins</div>
+        <div id="oWinsCount">0</div>
+    
+    <div id="tieGame">Tied Games</div>
+        <div id="tieGameCount">0</div>
 </body>
+
+<script type="text/javascript" src = "scripts/tictactoe.js"></script>
+
 </html>
