@@ -10,42 +10,42 @@
 
 <body>
     <!-- Game Title -->
-    <h1> TIC TAC TOE </h1>
+    <h1 id="heading"> TIC TAC TOE </h1>
     
     <!-- Game Reset Button -->
-    <div id="button">
-        <button class="reset" onclick="clearBoard()"> Play Again! </button>
+    <div id="buttonDiv">
+        <button id="reset" onclick="clearBoard()"> Play Again! </button>
     </div>
     
     <!-- Game Board -->
     <table id="board">
         <tr id="row1">
-            <td id="s1"></td>
-            <td id="s2"></td>
-            <td id="s3"></td>
+            <td id="s1" class="square"></td>
+            <td id="s2" class="square"></td>
+            <td id="s3" class="square"></td>
         </tr>
         <tr id="row2">
-            <td id="s4"></td>
-            <td id="s5"></td>
-            <td id="s6"></td>
+            <td id="s4" class="square"></td>
+            <td id="s5" class="square"></td>
+            <td id="s6" class="square"></td>
         </tr>
         <tr id="row3">
-            <td id="s7"></td>
-            <td id="s8"></td>
-            <td id="s9"></td>
+            <td id="s7" class="square"></td>
+            <td id="s8" class="square"></td>
+            <td id="s9" class="square"></td>
         </tr>
     </table>
 
     <!-- Score Board -->
-    
-    <div id="xWins">X Wins</div>
-        <div id="xWinsCount">0</div>
-    
-    <div id="oWins">O Wins</div>
-        <div id="oWinsCount">0</div>
-    
-    <div id="tieGame">Tied Games</div>
-        <div id="tieGameCount">0</div>
+    <div id="scoreBoard"> 
+        <div id="xWins">X Wins<br><span id="xWinsCount" class="score">0</br></span></div>
+
+        <div id="tieGame">Tied Games<br><span id="tieGameCount" class="score">0</br></span></div>
+            
+        <div id="oWins">O Wins<br><span id="oWinsCount" class="score">0</br></span></div>
+        
+    </div>
+
 </body>
 
 <script type="text/javascript" src = "scripts/tictactoe.js"></script>

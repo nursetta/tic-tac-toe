@@ -1,35 +1,34 @@
-
 body {
-    background-color: grey;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
-
+  background-color: grey;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
-h1 {
-    color: #12F389;
-    text-align: center;
-    font-size: 42pt;
-    font-family: Comic Sans MS;
-    margin: 10px;
-    -webkit-animation-name: TicTacToe; 
-    -webkit-animation-duration: 6s; 
-    animation-name: TicTacToe;
-    animation-iteration-count: infinite;
+#heading {
+  color: #12F389;
+  text-align: center;
+  font-size: 42pt;
+  font-family: Comic Sans MS;
+  margin: 10px;
+  -webkit-animation-name: TicTacToe; 
+  -webkit-animation-duration: 6s; 
+  animation-name: TicTacToe;
+  animation-iteration-count: infinite;
 }
+
 @-webkit-keyframes TicTacToe {
-    0%   {color:#11E57E; left:0px; top:0px;}
-    50%  {color:#08AFE3; left:200px; top:0px;}
-    100%  {color:#11E57E; left:200px; top:200px;}
-    }
-
-table {
-  margin: auto;
-
+  0%   {color:#11E57E; left:0px; top:0px;}
+  50%  {color:#08AFE3; left:200px; top:0px;}
+  100%  {color:#11E57E; left:200px; top:200px;}
 }
-td {
+
+#board {
+  margin: auto;
+}
+
+.square {
   border: 2px solid #12F389;
   width: 150px;
   height: 150px;
@@ -37,36 +36,83 @@ td {
   font-size: 60pt;
   font-family: Comic Sans MS;
   color: white;
-   -webkit-animation-name: boxes; 
-   -webkit-animation-duration: 6s; 
-   animation-name: boxes;
-   animation-iteration-count: infinite;
+  -webkit-animation-name: boxes; 
+  -webkit-animation-duration: 6s; 
+  animation-name: boxes;
+  animation-iteration-count: infinite;
 }
 
 @-webkit-keyframes boxes {
-    0%   {border: solid #08AFE3; left:0px; top:0px;}
-    50%  {border: solid #11E57E; left:200px; top:0px;}
-    100%  {border: solid #08AFE3; left:200px; top:200px;}
-    }
-
-button {
-    margin: 10px;
-    color: #12F389;
-    border: 2px solid #12F389;
-    height: 50px;
-    width: 130px;
-    font-family: Comic Sans MS;
-    font-size: 14pt;
-    background-color: transparent;
-
+  0%   {border: solid #08AFE3; left:0px; top:0px;}
+  50%  {border: solid #11E57E; left:200px; top:0px;}
+  100%  {border: solid #08AFE3; left:200px; top:200px;}
 }
 
-button:hover {
-    background-color: #08AFE3;
-    color: black;
-
+#reset {
+  margin: 10px;
+  color: #12F389;
+  border: 2px solid #12F389;
+  height: 50px;
+  width: 130px;
+  font-family: Comic Sans MS;
+  font-size: 14pt;
+  background-color: transparent;
 }
 
-#button {
+#reset:hover {
+  background-color: #08AFE3;
+  color: black;
+}
+
+#buttonDiv {
   text-align: center;
 }
+
+#xWins {
+  margin: 10px;
+  padding: 5px;
+  color: #12F389;
+  border: 2px solid #12F389;
+  height: 50px;
+  width: 130px;
+  font-family: Comic Sans MS;
+  font-size: 14pt;
+  background-color: transparent;
+  text-align: center;
+  display: inline-block;
+}
+
+#oWins {
+  margin: 10px;
+  padding: 5px;
+  color: #12F389;
+  border: 2px solid #12F389;
+  height: 50px;
+  width: 130px;
+  font-family: Comic Sans MS;
+  font-size: 14pt;
+  background-color: transparent;
+  text-align: center;
+  display: inline-block;
+}
+
+#tieGame {
+  margin: 10px;
+  padding: 5px;
+  color: #12F389;
+  border: 2px solid #12F389;
+  height: 50px;
+  width: 130px;
+  font-family: Comic Sans MS;
+  font-size: 14pt;
+  background-color: transparent;
+  text-align: center;
+  display: inline-block;
+}
+
+#scoreBoard {
+  margin-top: 10px;
+  text-align: center;
+}
+
+
