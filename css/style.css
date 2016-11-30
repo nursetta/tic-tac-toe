@@ -1,10 +1,10 @@
 
 body {
-    background-image: url(http://i.imgur.com/PHy98qZ.jpg);
-  	background-repeat: no-repeat;
-  	background-position: center center;
-  	background-attachment: fixed;
-  	background-size: cover;
+    background-color: grey;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
 
 }
 
@@ -50,7 +50,7 @@ td {
     }
 
 button {
-	margin: 10px;
+    margin: 10px;
     color: #12F389;
     border: 2px solid #12F389;
     height: 50px;
@@ -66,15 +66,7 @@ button:hover {
     color: black;
 
 }
-.button {
-	text-align: center;
-}
-.X {
-  color: #11E57E;
-}
-.O {
-  color: #08AFE3;
-}
-.clearbackground {
-	background: none;
+
+#button {
+  text-align: center;
 }
